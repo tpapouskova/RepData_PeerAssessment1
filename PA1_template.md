@@ -176,7 +176,7 @@ New factor variable created
 
 ```r
 noNA_data <- mutate(noNA_data, wd_we=weekdays(noNA_data$date, abbreviate = TRUE))
-noNA_data$wd_we <- gsub("(po)|(Ăşt)|(st)|(ÄŤt)|(pĂˇ)", "weekday", noNA_data$wd_we)
+noNA_data$wd_we <- gsub("(po)|(út)|(st)|(čt)|(pá)", "weekday", noNA_data$wd_we)
 noNA_data$wd_we <- gsub("(so)|(ne)", "weekend", noNA_data$wd_we)
 noNA_data$wd_we <- as.factor(noNA_data$wd_we)
 ```

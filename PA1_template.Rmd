@@ -91,7 +91,7 @@ After the imputation of missing values, the mean of the total number of steps ta
 New factor variable created
 ```{r}
 noNA_data <- mutate(noNA_data, wd_we=weekdays(noNA_data$date, abbreviate = TRUE))
-noNA_data$wd_we <- gsub("(po)|(Ãºt)|(st)|(Ät)|(pÃ¡)", "weekday", noNA_data$wd_we)
+noNA_data$wd_we <- gsub("(po)|(út)|(st)|(èt)|(pá)", "weekday", noNA_data$wd_we)
 noNA_data$wd_we <- gsub("(so)|(ne)", "weekend", noNA_data$wd_we)
 noNA_data$wd_we <- as.factor(noNA_data$wd_we)
 ```
