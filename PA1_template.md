@@ -5,6 +5,7 @@
 ```r
 library(dplyr)
 library(ggplot2)
+options(Encoding="UTF-8")
 ```
 
 ##Loading and preprocessing the data
